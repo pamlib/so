@@ -62,7 +62,7 @@ function useSoraSettings() {
     defaultValue: false,
   });
   const isAutoPlay = useLocalStorageValue('sora_settings-player-auto_play', {
-    defaultValue: false,
+    defaultValue: true,
   });
   const isAutoMini = useLocalStorageValue('sora_settings-player-auto_mini', {
     defaultValue: false,
