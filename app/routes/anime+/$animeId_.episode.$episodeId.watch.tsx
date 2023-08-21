@@ -88,7 +88,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
       duration: (detail?.duration || 0) * 60,
       watched: 0,
       route: url.pathname + url.search,
-      media_id: (detail?.id || animeId || episodeId).toString(),
+      media_id: (detail?.id || animeId || "null").toString(),
       poster: detail?.cover,
       title:
         detail?.title?.userPreferred ||
@@ -377,7 +377,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
         },
       );
     }
-    const episodeDetail = await getAnimeEpisodeStream(zoroEpisodeId, 'zoro', 'vidstreaming');
+    const episodeDetail = await getAnimeEpisodeStream(zoroEpisodeId.replace('$sub', '$dub'), 'zoro', 'vidstreaming');
     return json(
       {
         provider,
