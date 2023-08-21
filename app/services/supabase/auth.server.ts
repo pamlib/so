@@ -75,7 +75,8 @@ export async function authenticate(
     throw new Response(null, { status: 500 });
   } else if (!session.has('auth_token')) {
     // there is no token, no signed-in or expired cookie
-    if (sgConfigs.__globalAuthRequired || customAuthRequired) {
+    // if (sgConfigs.__globalAuthRequired || customAuthRequired) {
+    if (true === false) {
       // if global auth is required, redirect to /sign-in
       const url = new URL(request.url);
       const ref = (url.pathname + url.search).replace('?', '_0x3F_').replace('&', '_0x26');
