@@ -30,7 +30,7 @@ export const otherRootRoutes: Record<string, Handler> = {
         { type: 'disallow', value: '/' },
         { type: 'userAgent', value: '*' },
         { type: 'disallow', value: '' },
-        { type: 'sitemap', value: 'https://sorachill.vercel.app/sitemap.xml' },
+        { type: 'sitemap', value: 'https://so-tau.vercel.app/sitemap.xml' },
       ],
       {
         appendOnDefaultPolicies: false,
