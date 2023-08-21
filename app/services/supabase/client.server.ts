@@ -31,8 +31,8 @@ if (env.NODE_ENV === 'production') {
 const options = {
   auth: {
     autoRefreshToken: true,
-    persistSession: true,
-    detectSessionInUrl: true,
+    persistSession: false,
+    detectSessionInUrl: false,
   },
   global: {
     headers: {
