@@ -49,7 +49,7 @@ export const loader = async ({ request }: LoaderArgs) => {
 export const meta = mergeMeta(() => [
   { title: 'Sora - Anime' },
   { name: 'description', content: 'Discover anime in Sora' },
-  { property: 'og:url', content: 'https://sorachill.vercel.app/anime' },
+  { property: 'og:url', content: 'https://so-tau.vercel.app/anime' },
   { property: 'og:title', content: 'Sora - Anime' },
   { property: 'og:description', content: 'Discover anime in Sora' },
   { name: 'twitter:title', content: 'Sora - Anime' },
