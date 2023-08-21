@@ -721,7 +721,7 @@ export const meta = mergeMeta<typeof loader>(({ data, params }) => {
     },
     {
       property: 'og:url',
-      content: `https://sorachill.vercel.app/anime/${params.animeId}/episode/${params.episodeId}/watch`,
+      content: `https://so-tau.vercel.app/anime/${params.animeId}/episode/${params.episodeId}/watch`,
     },
     {
       property: 'og:title',
