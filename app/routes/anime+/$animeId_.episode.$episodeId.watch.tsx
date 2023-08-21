@@ -340,7 +340,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
     if (aniskip) {
       const [, episodeDetail] = await Promise.all([
         getHighlights(aniskip),
-        getAnimeEpisodeStream(zoroEpisodeId, 'zoro', 'vidstreaming'),
+        getAnimeEpisodeStream(zoroEpisodeId.replace('$sub', '$dub'), 'zoro', 'vidstreaming'),
       ]);
       return json(
         {
