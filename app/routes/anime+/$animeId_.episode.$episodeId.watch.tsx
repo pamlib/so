@@ -88,7 +88,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
       duration: (detail?.duration || 0) * 60,
       watched: 0,
       route: url.pathname + url.search,
-      media_id: (detail?.id || idProvider),
+      media_id: (detail?.id || animeId).toString(),
       poster: detail?.cover,
       title:
         detail?.title?.userPreferred ||
