@@ -7,7 +7,7 @@ type Handler = (request: Request, remixContext: EntryContext) => Promise<Respons
 export const otherRootRoutes: Record<string, Handler> = {
   '/sitemap.xml': async (request, remixContext) => {
     return generateSitemap(request, remixContext, {
-      siteUrl: 'https://sorachill.vercel.app',
+      siteUrl: 'https://so-tau.vercel.app',
       headers: {
         'Cache-Control': `public, max-age=${60 * 5}`,
       },
